@@ -1252,7 +1252,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #36edc7;
+  background: #de7578;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2599,13 +2599,6 @@ hr {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-body {
-  background: url("/images/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: cover;
-  background-position: 50% 50%;
-  opacity: 0.8;
-}
 .hitokoto-title {
   text-align: center;
   font-size: 12px;
@@ -2620,15 +2613,22 @@ body {
   font-family: "Microsoft YaHei";
   font-size: 10px;
 }
-.sidebar {
-  opacity: 0.85;
-}
-.header {
-  opacity: 0.85;
-}
 .sub-menu {
   margin: 10px 0;
 }
 .sub-menu .menu-item {
   display: inline-block;
+}
+body {
+  background: url("/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 767px) {
+  body {
+    background-image: url("https://ziyuan.lruihao.cn/images/bg_cell.png");
+    background-size: cover;
+  }
 }
